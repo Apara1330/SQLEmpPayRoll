@@ -32,6 +32,11 @@ select min(salary) from employee_payroll1 where gender = 'M' group by gender;
 select max(salary) from employee_payroll1;
 select count(salary) from employee_payroll1 ;
 delete from employee_payroll1 where id = 3;
+-----------UC8--------------------
+ALTER TABLE employee_payroll1 ADD phone bigint;
+ALTER TABLE employee_payroll1 ADD Location varchar(500)not null DEFAULT 'Mumbai';
+ALTER TABLE employee_payroll1 ADD department varchar(500) not null DEFAULT 'IT';
+
 
 
 
