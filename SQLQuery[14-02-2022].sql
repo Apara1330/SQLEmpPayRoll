@@ -22,11 +22,16 @@ select * from employee_payroll1;
 select salary from employee_payroll1 where name = 'Apara';
 select salary from employee_payroll1 where name = 'Aditya';
 -----------UC6------------------
-ALTER TABLE employee_payroll1
-ADD gender char(1);
+ALTER TABLE employee_payroll1 ADD gender char(1);
 update employee_payroll1 set gender = 'M' where name = 'Sidhu' or name= 'Gautam'or name = 'Aditya';
 update employee_payroll1 set gender = 'F' where name = 'Apara' or name= 'Rupali'or name = 'Depali';
-
+-----------UC7-------------------
+select sum(salary) from employee_payroll1 where gender = 'M' group by gender;
+select avg(salary) from employee_payroll1 where gender = 'F' group by gender;
+select min(salary) from employee_payroll1 where gender = 'M' group by gender;
+select max(salary) from employee_payroll1;
+select count(salary) from employee_payroll1 ;
+delete from employee_payroll1 where id = 3;
 
 
 
