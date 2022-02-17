@@ -18,6 +18,9 @@ insert into employee_payroll1 values('Apara',50000,'2021-12-15'),
 ('Aditya',34000,'2021-07-07');
 -----------UC4------------------
 select * from employee_payroll1;
+-----------UC5------------------
+select salary from employee_payroll1 where name = 'Apara';
+select salary from employee_payroll1 where name = 'Aditya';
 
 
 
