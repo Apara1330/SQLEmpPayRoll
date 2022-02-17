@@ -21,6 +21,12 @@ select * from employee_payroll1;
 -----------UC5------------------
 select salary from employee_payroll1 where name = 'Apara';
 select salary from employee_payroll1 where name = 'Aditya';
+-----------UC6------------------
+ALTER TABLE employee_payroll1
+ADD gender char(1);
+update employee_payroll1 set gender = 'M' where name = 'Sidhu' or name= 'Gautam'or name = 'Aditya';
+update employee_payroll1 set gender = 'F' where name = 'Apara' or name= 'Rupali'or name = 'Depali';
+
 
 
 
